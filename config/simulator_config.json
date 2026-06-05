@@ -1,0 +1,16 @@
+{
+  "deviceTypeName": "IoTSensor",
+  "topic": "iot/sensors",
+  "messageFrequencySeconds": 5,
+  "attributes": [
+    { "name": "deviceId",    "type": "id" },
+    { "name": "temperature", "type": "float", "min": 15, "max": 40, "precision": 2 },
+    { "name": "humidity",    "type": "float", "min": 30, "max": 90, "precision": 2 }
+  ],
+  "simulation": {
+    "name": "IoTSensorSimulation",
+    "devices": 5,
+    "intervalSeconds": 5,
+    "durationSeconds": 600
+  }
+}
